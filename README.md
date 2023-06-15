@@ -10,11 +10,11 @@ In the net.py script, a Convolutional Neural Network (CNN) is defined using PyTo
 
 ## Task2_0317
 
-from https://colab.research.google.com/drive/1At6amqGoWVGwOUg4XguBWmiZz4E2oKtg#scrollTo=m7B3-oh-EBsw notebook you need to finish basic training of the network with data augmentation and without, push your notebook and log history to the repository.
+Task1: from https://colab.research.google.com/drive/1At6amqGoWVGwOUg4XguBWmiZz4E2oKtg#scrollTo=m7B3-oh-EBsw notebook you need to finish basic training of the network with data augmentation and without, push your notebook and log history to the repository.
 	
-from ImageEmotionRecognition2023_A_student.ipynb you can find how face detector works on video frames, you should create a function to read the video example in the notebook, save all cropped faces from the detector you use to a folder, save the folder and your code in .py and push to repository.
+Task2: from ImageEmotionRecognition2023_A_student.ipynb you can find how face detector works on video frames, you should create a function to read the video example in the notebook, save all cropped faces from the detector you use to a folder, save the folder and your code in .py and push to repository.
 	
-from VideoAudioEmotionRecognition2023_A.ipynb you will find the pretrained CNN model, and example of LSTM and AttentionHead Unit, you should create a class VideoNet() that forward the cropped faces(converted to tensor), and output a 8 class classification vector. So expect Frames->CNN->deep features-> LSTM/AttentionHead->FC(linear layer, in LSTM case takes the last item, in AttentionHead takes cls token).
+Task3: from VideoAudioEmotionRecognition2023_A.ipynb you will find the pretrained CNN model, and example of LSTM and AttentionHead Unit, you should create a class VideoNet() that forward the cropped faces(converted to tensor), and output a 8 class classification vector. So expect Frames->CNN->deep features-> LSTM/AttentionHead->FC(linear layer, in LSTM case takes the last item, in AttentionHead takes cls token).
 
 ## Task3_0323
 
