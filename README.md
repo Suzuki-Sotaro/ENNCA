@@ -19,7 +19,9 @@ from VideoAudioEmotionRecognition2023_A.ipynb you will find the pretrained CNN m
 ## Task3_0323
 
 Task1: dataset create the dataset object that loads input and mask images, and another one loads input and one-hot-encoded mask tensors.
+
 Task2:Build FFN-UP A,B,C block, generate some random tensors, make sure the forward pass ok.
+
 Task3: Replace all convolution blocks with Inverted residual blocks.
 
 ## Task4_0413
