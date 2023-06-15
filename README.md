@@ -26,8 +26,10 @@ Task3: Replace all convolution blocks with Inverted residual blocks.
 
 Task1:
 Build the dataset object, you should load both input image in LR and target image in HR. Prepare some visualization of the samples having some agumentation simulating blurring, noise and compress effects(You can do that from HR with some compression, downsampling)
+
 Task2: 
 Build Resnet encoder and bifpn decoder network using all branches at different resolutions. Use pixel shuffle for final output from decoder to get SR output matching the SR requirements, 3 times in this case. You should generate Y channel only inputs for this task, you should expect also Y channel outputs for your target. Make forward of the data, and upsample the Cb,Cr components 3 times, can convert the output back to RGB format once you got the output from the network.
+
 Task3 : Collapsible linear blocks implementation Having the reference implementation in Keras, try to implement CLB in torch. Becareful of the conv2d parameters in keras mismatching in torch.
 
 https://github.com/ARM-software/sesr/blob/master/models/model_utils.py You should test it with
@@ -38,7 +40,9 @@ ps: You only need to implement LinearBlock_c. And you can skip anything related 
 ## Task5_0601
 
 Task1: Split the 1000 samples into two groups, 50%,50%, one of them will be named calibration_dataset while the other will be validation_dataset. You should use calibration dataset to calibrate scale and zero point before performing actual quantization.
+
 Task2: Make PTQ training for torchvision.models.quantization.mobilenet_v2, using PerchannelMinMax Quantization for weights and PerTensorMinMax Quantization separately.
+
 Task3: Make Perchannel MovingAverageMinMax Quantization for weights and MovingAverage Pertensor Quantization for activation. Compare to results in 2., Check which one is better. Compare some scales and zero points of from the observers. Explain why one of the solution is better?
 
 ## Project
